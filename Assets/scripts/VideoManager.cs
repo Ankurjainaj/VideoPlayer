@@ -4,10 +4,14 @@ using UnityEngine;
 using UnityEngine.Video;
 
 public class VideoManager : MonoBehaviour {
-    public VideoClip[] VideoClips;
+    
+	//adding array of video players
     public int CurrentVideo = 0;
     VideoPlayer VideoPlayer;
     AudioSource AudioSource;
+    public VideoClip[] VideoClips;
+	public GameObject g1,g2;
+	//use these to make any unity object visible on click
     bool IsPlaying = false;
     // Use this for initialization
     void Start () {
